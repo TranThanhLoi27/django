@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update Page
+{% endblock %}
+
+{% block content %}
+    <h1>Update Page</h1>
+    <p>The lastest update at {% now "DATETIME_FORMAT" %}</p>
+    <p>There are {{heros_list|length}} heros are changed </p>
+    <ul>
+        {% for hero in heros_list %}
+        <li>{{ hero }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
