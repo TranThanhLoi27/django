@@ -1,0 +1,13 @@
+{% extends "base.html "%}
+{% load static %}
+<link rel="stylesheet" href="{% static "css/style.css" %}">
+{% block tittle %}     
+    <h1>News</h1> 
+{% endblock %}
+
+{% block content %}
+    <p>Here is newspage.</p>
+    <p>You can explore about my page: </p>
+    <a href="tournament/">Tournament</a> |
+    <a href="update/">Update</a>
+{% endblock %}

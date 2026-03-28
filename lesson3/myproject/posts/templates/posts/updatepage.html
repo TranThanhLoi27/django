@@ -1,0 +1,18 @@
+{% extends "posts/base.html" %}
+{% block name %}
+<p>Update</p>
+{%endblock%}
+
+{%block tittle%}
+    <h1>Update Page</h1>
+{%endblock%}
+
+{%block content%}
+
+    <p>There are {{update_list|length}} heros are changed in the lastest update in {%now "DATETIME_FORMAT" %}: </p>
+    <ul>
+        {%  for hero in update_list %}
+                <li><p>{{hero}}</p></li>
+        {%endfor%}
+    </ul>
+{%endblock%}

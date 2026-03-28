@@ -1,0 +1,10 @@
+*{
+    box-sizing: 0;
+    padding: auto;
+}
+
+body{
+    color: aquamarine;
+    min-width: 100wh;
+    
+}
